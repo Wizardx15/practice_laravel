@@ -26,7 +26,7 @@ class StudentController extends Controller
             'jenis_kelamin' => 'required|in:P,L',
             'jurusan' => 'required',
             'alamat' => '',
-            'image' => 'required|file|image|max:1000',
+            'image' => 'required|file|image|max:5000',
         ]);
         $mahasiswa = new Student();
         $mahasiswa->nim = $validateData['nim'];
